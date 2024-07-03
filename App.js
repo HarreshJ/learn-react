@@ -6,11 +6,10 @@ function button() {
 
 export default function MyApp() {
     return (
-
         <div>
-        <h1>Test APP</h1>
-        <myButton/>
-    </div>
+            <h1>Test APP</h1>
+            <myButton/>
+        </div>
     );
 }
 
