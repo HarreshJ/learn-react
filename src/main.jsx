@@ -1,34 +1,32 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import 'styles.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+const container = document.getElementById('main');
+const root = createRoot(container);
 
-const button_pressed = false
+import App from './App';
 
-const GridComponent = () => {
-  const handleClick = () => {
-      console.log(`Button clicked`);
-      // Add your desired functionality here
-      Alert.alert("A button has been pressed")
+ReactDOM.createRoot(
+  document.getElementById('app')
+).render(<App />);
 
-  };
+const player = ['P1', 'P2'];
+const symbol = ['X', 'O'];
+const gameFinished = false;
+const tl_clicked = false;
+const tm_clicked = false;
+const tr_clicked = false;
+const ml_clicked = false;
+const mm_clicked = false;
+const mr_clicked = false;
+const bl_clicked = false;
+const bm_clicked = false;
+const br_clicked = false;
 
-  return (
-      <div className="grid-container">
-          <button className="column1" onClick={() => handleClick()}></button>
-          <button className="column1" onClick={() => handleClick()}></button>
-          <button className="column1" onClick={() => handleClick()}></button>
-          <button className="column2" onClick={() => handleClick()}></button>
-          <button className="column2" onClick={() => handleClick()}></button>
-          <button className="column2" onClick={() => handleClick()}></button>
-          <button className="column3" onClick={() => handleClick()}></button>
-          <button className="column3" onClick={() => handleClick()}></button>
-      </div>
-  );
+while (gameFinshed = false) {
+  for (turns in Range(9)) {
+
+  }
+  gameFinished = true;
 }
